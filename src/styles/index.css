@@ -1,0 +1,119 @@
+@import "editor.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h3, h4, h5, h6, p, li {
+  font-family: "Open Sans", verdana, sans-serif;
+}
+
+h4, h5, h6, p, .public-DraftStyleDefault-block {
+  color: #727272;
+  margin: 0.9375em 0;
+}
+
+h3, h4, h5, b {
+  font-weight: 700;
+}
+
+h5, h6 {
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 1.25em;
+  color: #212121;
+  margin: 0.9091em 0;
+}
+
+h4 {
+  margin: 0.83333em 0;
+  font-size: 1.1em;
+}
+
+h6 {
+  font-weight: 600;
+}
+
+p, .public-DraftStyleDefault-block {
+  margin: 1.0714em 0;
+  font-size: 0.875em;
+}
+
+i {
+  font-style: italic;
+}
+
+a {
+  color: #8bc34a;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* ======================| LISTS |===================== */
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: block;
+  display: table;
+  margin: 1.0714em 0;
+}
+
+ol li,
+ul li {
+  list-style-position: inside;
+  color: #727272;
+  position: relative;
+  font-size: 0.875em;
+  margin: 0.3175em 0;
+}
+
+.public-DraftStyleDefault-unorderedListItem,
+.public-DraftStyleDefault-unorderedListItem.public-DraftStyleDefault-depth0 {
+  list-style: none;
+}
+
+ol li:first-of-type,
+ul li:first-of-type {
+  margin-top: 0;
+}
+
+ul li {
+  padding-left: 11px;
+}
+
+ol li {
+  padding-left: 16px;
+}
+
+ul li::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #727272;;
+  left: 0;
+  top: 7px;
+}
+
+ol {
+  counter-reset: list-counter;
+}
+
+ol li::before {
+  content: counter(list-counter) ".";
+  counter-increment: list-counter;
+  position: absolute;
+  left: 0;
+}
