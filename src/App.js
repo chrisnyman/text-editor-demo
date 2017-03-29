@@ -2,7 +2,7 @@ import React from 'react';
 import { Editor } from 'react-draft-wysiwyg';
 import { convertToRaw } from 'draft-js';
 import draftToHtml from 'draftjs-to-html';
-import './styles/App.css';
+import './styles/index.css';
 
 var toolbar = {
   options: ['inline', 'blockType', 'list', 'link', 'history' ],
